@@ -1,0 +1,15 @@
+#include <ESP8266wifi.h> // header files for NodeMcu Connections
+#include<BlynkSimpleEsp8266.h> 
+// wifi Credentials.
+Char ssid[] = “Komal”;
+Char pass[] = “abdg@123”;
+void setup()
+{
+// Debug console
+Serial.begin(9600);
+Blynk.begin(auth, ssid, pass)
+}
+Void loop()
+{
+Blynk.run();
+}
